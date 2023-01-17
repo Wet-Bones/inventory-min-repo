@@ -16,10 +16,6 @@ export function ApiStack({ stack }: StackContext) {
       },
     },
     routes: {
-      "POST /items": "functions/createItem.main",
-      "GET /items/{id}": "functions/getItem.main",
-      "PUT /items/{id}": "functions/updateItem.main",
-      "DELETE /items/{id}": "functions/deleteItem.main",
       "GET /items": "functions/listItem.main",
     },
   });
@@ -35,10 +31,6 @@ export function ApiStack({ stack }: StackContext) {
       },
     },
     routes: {
-      "POST /vendors": "functions/createVendor.main",
-      "GET /vendors/{id}": "functions/getVendor.main",
-      "PUT /vendors/{id}": "functions/updateVendor.main",
-      "DELETE /vendors/{id}": "functions/deleteVendor.main",
       "GET /vendors": "functions/listVendor.main",
     },
   });
